@@ -17,4 +17,4 @@ let messageReducer = (state = [], action) => {
 }
 const store = Redux.createStore(messageReducer);
 
-//After we manage locally, we can extract the logic from the local state to a Redux store
+//Now we create a Redux store to handle updates to the messages array and create an action for adding new messages
