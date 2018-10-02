@@ -1,0 +1,18 @@
+const addMessage = (message) => {
+  return {
+    type: 'ADD',
+    message: message
+  }
+};
+
+// change code below this line
+function mapDispatchToProps(dispatch){
+    return {
+        submitNewMessage: function(message) {
+            dispatch(addMessage(message))
+    }
+}
+}
+
+/* "The mapDispatchToProps() function is used to provide specific action creators 
+to your React components so they can dispatch actions against the Redux store."--freeCodeCamp */
